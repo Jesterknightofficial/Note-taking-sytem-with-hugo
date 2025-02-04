@@ -6,7 +6,7 @@ read directory
 
 echo "Enter note name"
 read notename
-hugo new $notename
-mv content/$notename content/$directory/
+hugo new $notename.md
+mv content/$notename.md content/$directory/
 cd content/$directory
-vim $notename
+vim $notename.md
